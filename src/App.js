@@ -1,14 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
+import ThreadDisplay from './ThreadDisplay/components/ThreadDisplay';
 import './App.css';
 
-function App() {
+class App extends Component {
+render() {
   return (
-    <div className="App">
-        <p>
-          Hello World!
-        </p>
-    </div>
-  );
+    <ThreadDisplay />
+    );
+  }
 }
 
 export default App;
