@@ -6,10 +6,8 @@ class PostEditor extends Component {
     this.state ={
       newPostBody:'',
     };
-
     this.handlePostEditorInputChange = this.handlePostEditorInputChange.bind(this);
     this.createPost= this.createPost.bind(this);
-
   }
   handlePostEditorInputChange(ev){
     this.setState ({
@@ -22,7 +20,6 @@ class PostEditor extends Component {
       newPostBody: '',
     });
   }
-
   render(){
     return(
       <div className = "panel panel-default post-editor">
